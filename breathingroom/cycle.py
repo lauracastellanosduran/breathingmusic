@@ -208,11 +208,11 @@ def _metadata(date: str, concept: Concept, status: str, detail: dict, cycle_dir:
         "description": description(concept),
         "search_intent": concept.search_intent,
         "artifacts": {
-            "final_video": detail.get("final_video"),
-            "thumbnail": str(cycle_dir / "THUMBNAIL.jpg"),
-            "thumbnail_note": "Designed still for the concept. Replace it with a frame from the finished picture before publication.",
-            "audio_master": str(cycle_dir / "audio_master.mp3") if (cycle_dir / "audio_master.mp3").exists() else None,
-            "qa_report": str(cycle_dir / "qa_report.json"),
+            "final_video": _repo_path(detail.get("final_video"), cycle_dir),
+            "thumbnail": _repo_path(cycle_dir / "THUMBNAIL.jpg", cycle_dir),
+            "thumbnail_note": "Designed still for the concept. Replace it with a frame from the finished rainy-window picture before publication.",
+            "audio_master": _repo_path(cycle_dir / "audio_master.mp3", cycle_dir) if (cycle_dir / "audio_master.mp3").exists() else None,
+            "qa_report": _repo_path(cycle_dir / "qa_report.json", cycle_dir),
         },
         "metrics": {
             "impressions": None,
@@ -282,7 +282,8 @@ def _write_scorecard(path: Path, date: str, scored: list[dict], selected_id: str
     for item in ordered:
         mark = "yes" if item["eligible"] else "no"
         chosen = " — selected" if item["concept_id"] == selected_id else ""
-        lines.append(f"| {item['total']} | {item['purpose']} | {item['title']}{chosen} | {mark} |")
+        title = item["title"].replace("|", "/")
+        lines.append(f"| {item['total']} | {item['purpose']} | {title}{chosen} | {mark} |")
     if selected_id:
         chosen = next(item for item in scored if item["concept_id"] == selected_id)
         lines.extend(
@@ -309,6 +310,17 @@ def _write_scorecard(path: Path, date: str, scored: list[dict], selected_id: str
     else:
         lines.extend(["", "No concept reached 75. Nothing was produced.", ""])
     path.write_text("\n".join(lines))
+
+
+def _repo_path(path: str | Path | None, cycle_dir: Path) -> str | None:
+    if path is None:
+        return None
+    candidate = Path(path)
+    root = cycle_dir.parent.parent
+    try:
+        return str(candidate.resolve().relative_to(root))
+    except ValueError:
+        return str(candidate)
 
 
 def _by_id(concept_id: str) -> Concept:

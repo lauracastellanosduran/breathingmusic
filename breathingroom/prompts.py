@@ -21,7 +21,7 @@ def section_prompts(concept: Concept) -> list[dict]:
             (
                 f"Instrumental ambient music for this activity: {concept.viewer_situation}.",
                 concept.music_direction,
-                f"Section {name}: {ENERGY_DIRECTION[concept.purpose][stage]}",
+                f"Section {name}: {_direction(concept.purpose, stage, index)}",
                 continuation,
                 "Spacious modern production that can stay on for half an hour without asking for attention.",
                 forbidden,
@@ -29,3 +29,13 @@ def section_prompts(concept: Concept) -> list[dict]:
         )
         prompts.append({"section": name, "energy": stage, "prompt": text})
     return prompts
+
+
+def _direction(purpose: str, stage: str, index: int) -> str:
+    curve = ENERGY_CURVE[purpose]
+    if index == 1 and curve[1] == curve[0]:
+        return (
+            "Remain at the same energy as the opening. Allow only a slight harmonic drift "
+            "inside the same chords and the same instruments. Do not lift the volume."
+        )
+    return ENERGY_DIRECTION[purpose][stage]

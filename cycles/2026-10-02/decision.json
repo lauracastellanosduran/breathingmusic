@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-02",
+  "upload_status": "PRIVATE",
+  "concept_id": "rainy-focus-working-reading",
+  "purpose": "FOCUS",
+  "viewer_situation": "Quiet concentrated computer work or reading beside a window while rain falls",
+  "search_intent": "rainy focus music, music for working and reading, rain sounds for studying",
+  "working_title": "Rainy Focus Music for Working and Reading | 30 Min",
+  "music_direction": "Warm atmospheric ambient music with restrained soft piano textures and a subtle organic hush. Stable low-to-medium energy, minimal melodic movement, extremely restrained rhythm, and slow development.",
+  "visual_world": "Rain moving slowly across a large window, soft daylight, muted interior, no people",
+  "energy": "Low-medium",
+  "total_score": 94,
+  "scores": {
+    "search_demand": 23,
+    "channel_relevance": 24,
+    "specificity": 14,
+    "repeat_use": 15,
+    "distinctiveness": 8,
+    "library_gap": 10
+  },
+  "target_duration_seconds": 1770.0,
+  "playlist": "BREATHING ROOM \u2014 FOCUS",
+  "description": "A quiet 30-minute ambient session for focused work and reading.\n\nDesigned for quiet concentrated computer work or reading beside a window while rain falls, with warm atmospheric music, restrained piano, and a steady low-to-medium energy.\n\nNo talking. No interruptions.\n\nBreathing Room \u2014 a little space for whatever you're going through.",
+  "thumbnail_text": "RAINY FOCUS",
+  "prompts_written_before_audio": true,
+  "section_prompts": [
+    {
+      "section": "A",
+      "energy": "stable",
+      "prompt": "Instrumental ambient music for this activity: Quiet concentrated computer work or reading beside a window while rain falls.\nWarm atmospheric ambient music with restrained soft piano textures and a subtle organic hush. Stable low-to-medium energy, minimal melodic movement, extremely restrained rhythm, and slow development.\nSection A: Stable low-to-medium energy, already in motion, with no introductory swell and no lift in intensity.\nThis is the opening of one continuous piece. Do not fade in from silence.\nSpacious modern production that can stay on for half an hour without asking for attention.\nNo vocals.\nNo catchy lead melody.\nNo heavy drums.\nNo sudden transitions.\nNo dramatic builds.\nNo cinematic climax."
+    },
+    {
+      "section": "B",
+      "energy": "stable",
+      "prompt": "Instrumental ambient music for this activity: Quiet concentrated computer work or reading beside a window while rain falls.\nWarm atmospheric ambient music with restrained soft piano textures and a subtle organic hush. Stable low-to-medium energy, minimal melodic movement, extremely restrained rhythm, and slow development.\nSection B: Remain at the same energy as the opening. Allow only a slight harmonic drift inside the same chords and the same instruments. Do not lift the volume.\nContinue the same piece and the same instrumentation. Do not restart and do not introduce a new theme.\nSpacious modern production that can stay on for half an hour without asking for attention.\nNo vocals.\nNo catchy lead melody.\nNo heavy drums.\nNo sudden transitions.\nNo dramatic builds.\nNo cinematic climax."
+    },
+    {
+      "section": "C",
+      "energy": "slightly calmer",
+      "prompt": "Instrumental ambient music for this activity: Quiet concentrated computer work or reading beside a window while rain falls.\nWarm atmospheric ambient music with restrained soft piano textures and a subtle organic hush. Stable low-to-medium energy, minimal melodic movement, extremely restrained rhythm, and slow development.\nSection C: Slightly calmer than the opening. Do not brighten, do not add instruments, and do not build.\nContinue the same piece and the same instrumentation. Do not restart and do not introduce a new theme.\nSpacious modern production that can stay on for half an hour without asking for attention.\nNo vocals.\nNo catchy lead melody.\nNo heavy drums.\nNo sudden transitions.\nNo dramatic builds.\nNo cinematic climax."
+    }
+  ],
+  "design_gate": {
+    "viewer_activity_clear": true,
+    "music_direction_present": true,
+    "visual_world_present": true,
+    "single_purpose": true,
+    "interruptions_in_design": false,
+    "proceed": true
+  },
+  "final_questions": {
+    "what_is_the_viewer_doing": "Quiet concentrated computer work or reading beside a window while rain falls",
+    "why_this_instead_of_generic_ambient": "Work and reading are daily uses. Rain gives the session a specific room without mixing purposes.",
+    "music_supports_that_activity": true,
+    "visual_supports_the_same_environment": true,
+    "comfortable_for_30_minutes": true,
+    "interruption_designed_in": false
+  },
+  "production_status": "blocked_missing_elevenlabs_key",
+  "production_detail": {
+    "sections": [
+      "A",
+      "B",
+      "C"
+    ]
+  }
+}

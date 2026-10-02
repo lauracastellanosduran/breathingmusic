@@ -1,0 +1,40 @@
+{
+  "production_status": "blocked_missing_elevenlabs_key",
+  "upload_status": "PRIVATE",
+  "audio": {
+    "ran": false,
+    "reason": "Music was not generated, so there is nothing to inspect."
+  },
+  "video": {
+    "ran": false,
+    "aspect": null
+  },
+  "human_review_required": [
+    "sections sound like the same musical world",
+    "no unexpected vocals",
+    "no harsh frequencies",
+    "no abrupt visual cuts",
+    "no stock watermark",
+    "opening has no permanent title card",
+    "ending does not feel like a sudden removal"
+  ],
+  "sample_times": [
+    "00:00",
+    "05:00",
+    "10:00",
+    "15:00",
+    "20:00",
+    "25:00",
+    "29:30"
+  ],
+  "frame_times": [
+    "00:05",
+    "05:00",
+    "10:00",
+    "15:00",
+    "20:00",
+    "25:00",
+    "29:30"
+  ],
+  "samples": []
+}

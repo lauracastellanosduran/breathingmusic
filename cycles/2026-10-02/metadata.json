@@ -1,0 +1,35 @@
+{
+  "upload_status": "PRIVATE",
+  "production_status": "blocked_missing_elevenlabs_key",
+  "video_id": null,
+  "date": "2026-10-02",
+  "purpose": "FOCUS",
+  "viewer_situation": "Quiet concentrated computer work or reading beside a window while rain falls",
+  "title": "Rainy Focus Music for Working and Reading | 30 Min",
+  "duration_target_seconds": 1770.0,
+  "music_profile": "Warm pads, restrained soft piano, stable low-medium energy, rain-adjacent texture",
+  "visual_world": "Rain moving slowly across a large window, soft daylight, muted interior, no people",
+  "thumbnail_style": "One rainy window, cool daylight, two words, no duration",
+  "thumbnail_text": "RAINY FOCUS",
+  "playlist": "BREATHING ROOM \u2014 FOCUS",
+  "description": "A quiet 30-minute ambient session for focused work and reading.\n\nDesigned for quiet concentrated computer work or reading beside a window while rain falls, with warm atmospheric music, restrained piano, and a steady low-to-medium energy.\n\nNo talking. No interruptions.\n\nBreathing Room \u2014 a little space for whatever you're going through.",
+  "search_intent": "rainy focus music, music for working and reading, rain sounds for studying",
+  "artifacts": {
+    "final_video": null,
+    "thumbnail": "cycles/2026-10-02/THUMBNAIL.jpg",
+    "thumbnail_note": "Designed still for the concept. Replace it with a frame from the finished rainy-window picture before publication.",
+    "audio_master": null,
+    "qa_report": "cycles/2026-10-02/qa_report.json"
+  },
+  "metrics": {
+    "impressions": null,
+    "ctr": null,
+    "views": null,
+    "watch_hours": null,
+    "average_view_duration": null,
+    "average_percentage_viewed": null,
+    "subscribers_gained": null,
+    "traffic_sources": null,
+    "search_terms": null
+  }
+}

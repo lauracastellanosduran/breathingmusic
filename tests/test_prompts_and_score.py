@@ -24,6 +24,8 @@ def test_prompts_are_instrumental_and_stay_in_one_world():
             assert line in text
         assert "lyrics" not in text.lower()
     assert "Do not restart" in prompts[1]["prompt"]
+    assert "harmonic drift" in prompts[1]["prompt"]
+    assert "introductory swell" not in prompts[1]["prompt"]
     assert "Do not restart" in prompts[2]["prompt"]
 
 

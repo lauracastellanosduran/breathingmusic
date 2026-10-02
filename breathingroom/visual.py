@@ -32,17 +32,20 @@ def extend_plate(
     if allow_reverse and not reverse_allowed(visual_world):
         raise VisualError(f"reversing is not believable for this picture: {visual_world}")
     source_duration = _duration(source)
+    width, height = _dimensions(source)
     fade = min(2.0, source_duration / 5)
     if fade < 0.3:
         raise VisualError("visual plate is too short to crossfade")
     output.parent.mkdir(parents=True, exist_ok=True)
     unit = output.with_name(output.stem + "-unit.mp4")
     offset = source_duration - fade
-    zoom = "scale=iw*1.04:ih*1.04,crop=iw/1.04:ih/1.04,setsar=1"
+    zoom_w = _even(int(width * 1.04))
+    zoom_h = _even(int(height * 1.04))
+    zoom = f"scale={zoom_w}:{zoom_h},crop={width}:{height},setsar=1"
     reverse = "reverse," if allow_reverse else ""
     graph = (
         f"[0:v]split[base][alt];"
-        f"[alt]{reverse}{zoom}setpts=PTS-STARTPTS[zoomed];"
+        f"[alt]{reverse}{zoom},setpts=PTS-STARTPTS[zoomed];"
         f"[base]setpts=PTS-STARTPTS[main];"
         f"[main][zoomed]xfade=transition=fade:duration={fade:.3f}:offset={offset:.3f},format=yuv420p[v]"
     )
@@ -94,6 +97,32 @@ def extend_plate(
         "reversed": allow_reverse,
         "source_duration": source_duration,
     }
+
+
+def _even(value: int) -> int:
+    return value if value % 2 == 0 else value + 1
+
+
+def _dimensions(path: Path) -> tuple[int, int]:
+    result = subprocess.run(
+        [
+            "ffprobe",
+            "-v",
+            "error",
+            "-select_streams",
+            "v:0",
+            "-show_entries",
+            "stream=width,height",
+            "-of",
+            "csv=p=0:s=x",
+            str(path),
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    width, height = result.stdout.strip().split("x")
+    return int(width), int(height)
 
 
 def _duration(path: Path) -> float:

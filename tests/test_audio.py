@@ -76,7 +76,7 @@ def test_silence_and_clipping_fail_inspection(tmp_path: Path):
     assert silence_report["checks"]["no_unexpected_silence"] is False
 
     loud = tmp_path / "loud.mp3"
-    _tone(loud, 220, 1.5, 0)
+    _tone(loud, 220, 1.5, 24)
     loud_report = inspect_audio(loud, duration_min=0, duration_max=20, window_seconds=0.5)
     assert loud_report["checks"]["no_clipping"] is False
 

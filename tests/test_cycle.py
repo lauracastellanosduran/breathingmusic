@@ -28,6 +28,8 @@ def test_empty_library_selects_rainy_focus_and_does_not_invent_audio(tmp_path, m
     assert not (cycle / "audio_master.mp3").exists()
     assert not (cycle / "FINAL_VIDEO.mp4").exists()
     assert (cycle / "THUMBNAIL.jpg").exists()
+    assert result["artifacts"]["thumbnail"] == "cycles/2026-10-02/THUMBNAIL.jpg"
+    assert "Rainy Focus Music for Working and Reading / 30 Min — selected" in (cycle / "SCORECARD.md").read_text()
 
     qa = json.loads((cycle / "qa_report.json").read_text())
     assert qa["audio"]["ran"] is False

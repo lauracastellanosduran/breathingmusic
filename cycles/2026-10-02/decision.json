@@ -56,12 +56,20 @@
     "comfortable_for_30_minutes": true,
     "interruption_designed_in": false
   },
-  "production_status": "blocked_missing_elevenlabs_key",
+  "production_status": "blocked_music_request",
   "production_detail": {
     "sections": [
       "A",
       "B",
       "C"
-    ]
+    ],
+    "elevenlabs_called": true,
+    "force_instrumental": true,
+    "http_status": 400,
+    "error_code": "invalid_api_key",
+    "error_status": "api_key_id_used_as_api_key",
+    "reason": "ElevenLabs was called with force_instrumental true and returned HTTP 400. The ELEVENLABS_API_KEY runtime secret is an API key ID, not an API key. ElevenLabs keys start with sk_. No section audio was written. No substitute music library was used.",
+    "visual_plate": null,
+    "visual_still_missing": "A legal video plate of rain moving slowly across a large window, in soft daylight, with a muted interior and no people. VISUAL_PLATE is unset, and the repo has no licensed rain footage or still that can be that plate. Rain must not be reversed. The concept thumbnail is a designed still, not footage."
   }
 }

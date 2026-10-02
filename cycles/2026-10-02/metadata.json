@@ -1,6 +1,8 @@
 {
   "upload_status": "PRIVATE",
-  "production_status": "blocked_missing_elevenlabs_key",
+  "production_status": "blocked_music_request",
+  "elevenlabs_called": true,
+  "blocker": "ElevenLabs rejected ELEVENLABS_API_KEY with HTTP 400 because the runtime secret is an API key ID, not an sk_ API key. No audio master was written. A private picture also still needs a legal video plate of rain moving slowly across a large window, soft daylight, muted interior, no people.",
   "video_id": null,
   "date": "2026-10-02",
   "purpose": "FOCUS",

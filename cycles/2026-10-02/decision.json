@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-02",
+  "upload_status": "PRIVATE",
+  "concept_id": "rainy-focus-working-reading",
+  "purpose": "FOCUS",
+  "viewer_situation": "Quiet concentrated computer work or reading beside a window while rain falls",
+  "search_intent": "rainy focus music, music for working and reading, rain sounds for studying",
+  "working_title": "Rainy Focus Music for Working and Reading | 30 Min",
+  "music_direction": "Warm atmospheric ambient music with restrained soft piano textures and a subtle organic hush. Stable low-to-medium energy, minimal melodic movement, extremely restrained rhythm, and slow development.",
+  "visual_world": "Rain moving slowly across a large window, soft daylight, muted interior, no people",
+  "energy": "Low-medium",
+  "total_score": 94,
+  "scores": {
+    "search_demand": 23,
+    "channel_relevance": 24,
+    "specificity": 14,
+    "repeat_use": 15,
+    "distinctiveness": 8,
+    "library_gap": 10
+  },
+  "target_duration_seconds": 1770.0,
+  "playlist": "BREATHING ROOM \u2014 FOCUS",
+  "description": "A quiet 30-minute ambient session for focused work and reading.\n\nDesigned for quiet concentrated computer work or reading beside a window while rain falls, with warm atmospheric music, restrained piano, and a steady low-to-medium energy.\n\nNo talking. No interruptions.\n\nBreathing Room \u2014 a little space for whatever you're going through.",
+  "thumbnail_text": "RAINY FOCUS",
+  "prompts_written_before_audio": true,
+  "section_prompts": [
+    {
+      "section": "A",
+      "energy": "stable",
+      "prompt": "Instrumental ambient music for this activity: Quiet concentrated computer work or reading beside a window while rain falls.\nWarm atmospheric ambient music with restrained soft piano textures and a subtle organic hush. Stable low-to-medium energy, minimal melodic movement, extremely restrained rhythm, and slow development.\nSection A: Stable low-to-medium energy, already in motion, with no introductory swell and no lift in intensity.\nThis is the opening of one continuous piece. Do not fade in from silence.\nSpacious modern production that can stay on for half an hour without asking for attention.\nNo vocals.\nNo catchy lead melody.\nNo heavy drums.\nNo sudden transitions.\nNo dramatic builds.\nNo cinematic climax."
+    },
+    {
+      "section": "B",
+      "energy": "stable",
+      "prompt": "Instrumental ambient music for this activity: Quiet concentrated computer work or reading beside a window while rain falls.\nWarm atmospheric ambient music with restrained soft piano textures and a subtle organic hush. Stable low-to-medium energy, minimal melodic movement, extremely restrained rhythm, and slow development.\nSection B: Remain at the same energy as the opening. Allow only a slight harmonic drift inside the same chords and the same instruments. Do not lift the volume.\nContinue the same piece and the same instrumentation. Do not restart and do not introduce a new theme.\nSpacious modern production that can stay on for half an hour without asking for attention.\nNo vocals.\nNo catchy lead melody.\nNo heavy drums.\nNo sudden transitions.\nNo dramatic builds.\nNo cinematic climax."
+    },
+    {
+      "section": "C",
+      "energy": "slightly calmer",
+      "prompt": "Instrumental ambient music for this activity: Quiet concentrated computer work or reading beside a window while rain falls.\nWarm atmospheric ambient music with restrained soft piano textures and a subtle organic hush. Stable low-to-medium energy, minimal melodic movement, extremely restrained rhythm, and slow development.\nSection C: Slightly calmer than the opening. Do not brighten, do not add instruments, and do not build.\nContinue the same piece and the same instrumentation. Do not restart and do not introduce a new theme. Keep this same music going for the full ten minutes. Do not fade out, do not conclude, and do not go silent.\nSpacious modern production that can stay on for half an hour without asking for attention.\nNo vocals.\nNo catchy lead melody.\nNo heavy drums.\nNo sudden transitions.\nNo dramatic builds.\nNo cinematic climax."
+    }
+  ],
+  "design_gate": {
+    "viewer_activity_clear": true,
+    "music_direction_present": true,
+    "visual_world_present": true,
+    "single_purpose": true,
+    "interruptions_in_design": false,
+    "proceed": true
+  },
+  "final_questions": {
+    "what_is_the_viewer_doing": "Quiet concentrated computer work or reading beside a window while rain falls",
+    "why_this_instead_of_generic_ambient": "Work and reading are daily uses. Rain gives the session a specific room without mixing purposes.",
+    "music_supports_that_activity": true,
+    "visual_supports_the_same_environment": true,
+    "comfortable_for_30_minutes": true,
+    "interruption_designed_in": false
+  },
+  "production_status": "ready_for_human_review",
+  "production_detail": {
+    "sections": [
+      "A",
+      "B",
+      "C"
+    ],
+    "assembly": {
+      "output": "/workspace/cycles/2026-10-02/audio_master.mp3",
+      "section_durations": [
+        600.024,
+        600.024,
+        600.024
+      ],
+      "gains_db": [
+        -1.9,
+        -0.7,
+        -1.2
+      ],
+      "crossfade_seconds": 15,
+      "final_fade_seconds": 45,
+      "expected_duration": 1770.0720000000001,
+      "duration": 1770.096
+    },
+    "audio_qa": {
+      "path": "/workspace/cycles/2026-10-02/audio_master.mp3",
+      "duration_seconds": 1770.096,
+      "peak_db": -2.7,
+      "checks": {
+        "duration_in_range": true,
+        "no_clipping": true,
+        "no_unexpected_silence": true,
+        "no_major_loudness_jumps": true,
+        "ending_is_present": true
+      },
+      "passed": true,
+      "silence": [],
+      "loudness_jumps": [],
+      "vocals": "human_review_required",
+      "musical_continuity": "human_review_required",
+      "sample_times": [
+        "00:00",
+        "05:00",
+        "10:00",
+        "15:00",
+        "20:00",
+        "25:00",
+        "29:30"
+      ]
+    },
+    "samples": [
+      "/workspace/cycles/2026-10-02/qa_samples/sample_0000.mp3",
+      "/workspace/cycles/2026-10-02/qa_samples/sample_0500.mp3",
+      "/workspace/cycles/2026-10-02/qa_samples/sample_1000.mp3",
+      "/workspace/cycles/2026-10-02/qa_samples/sample_1500.mp3",
+      "/workspace/cycles/2026-10-02/qa_samples/sample_2000.mp3",
+      "/workspace/cycles/2026-10-02/qa_samples/sample_2500.mp3",
+      "/workspace/cycles/2026-10-02/qa_samples/sample_2930.mp3"
+    ],
+    "visual": {
+      "output": "/workspace/cycles/2026-10-02/visual.mp4",
+      "duration": 1780.0,
+      "reversed": false,
+      "reused": true
+    },
+    "final_video": "/workspace/cycles/2026-10-02/FINAL_VIDEO.mp4",
+    "video_qa": {
+      "ran": true,
+      "path": "/workspace/cycles/2026-10-02/FINAL_VIDEO.mp4",
+      "duration_seconds": 1770.072,
+      "width": 1280,
+      "height": 720,
+      "aspect": "16:9",
+      "checks": {
+        "duration_in_range": true,
+        "aspect_16_9": true,
+        "audio_present": true,
+        "visual_present": true,
+        "no_black_frames": true
+      },
+      "passed": true,
+      "frames": [
+        {
+          "time": "00:05",
+          "path": "/workspace/cycles/2026-10-02/qa_frames/frame_0005.jpg",
+          "y_avg": 68.8021
+        },
+        {
+          "time": "05:00",
+          "path": "/workspace/cycles/2026-10-02/qa_frames/frame_0500.jpg",
+          "y_avg": 68.333
+        },
+        {
+          "time": "10:00",
+          "path": "/workspace/cycles/2026-10-02/qa_frames/frame_1000.jpg",
+          "y_avg": 67.9774
+        },
+        {
+          "time": "15:00",
+          "path": "/workspace/cycles/2026-10-02/qa_frames/frame_1500.jpg",
+          "y_avg": 68.0587
+        },
+        {
+          "time": "20:00",
+          "path": "/workspace/cycles/2026-10-02/qa_frames/frame_2000.jpg",
+          "y_avg": 68.4259
+        },
+        {
+          "time": "25:00",
+          "path": "/workspace/cycles/2026-10-02/qa_frames/frame_2500.jpg",
+          "y_avg": 68.9112
+        },
+        {
+          "time": "29:30",
+          "path": "/workspace/cycles/2026-10-02/qa_frames/frame_2930.jpg",
+          "y_avg": 69.7072
+        }
+      ],
+      "frame_times": [
+        "00:05",
+        "05:00",
+        "10:00",
+        "15:00",
+        "20:00",
+        "25:00",
+        "29:30"
+      ],
+      "opening_text": "none",
+      "reversed": false
+    }
+  }
+}

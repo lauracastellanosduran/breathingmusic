@@ -1,0 +1,43 @@
+{
+  "production_status": "blocked_music_request",
+  "upload_status": "PRIVATE",
+  "audio": {
+    "ran": false,
+    "elevenlabs_called": true,
+    "http_status": 401,
+    "reason": "ElevenLabs was called for section A with force_instrumental true and returned HTTP 401 payment_required (insufficient_credits, quota_exceeded, request bb10ca6dd6e674880d3454685de794e8): You have insufficient credits to generate this song. Please upgrade your plan to continue. No audio file was written, so there is nothing to inspect."
+  },
+  "video": {
+    "ran": false,
+    "aspect": null,
+    "reason": "No private picture master. Audio was not produced, and a legal rainy-window video plate is still missing: rain moving slowly across a large window, soft daylight, muted interior, no people."
+  },
+  "human_review_required": [
+    "sections sound like the same musical world",
+    "no unexpected vocals",
+    "no harsh frequencies",
+    "no abrupt visual cuts",
+    "no stock watermark",
+    "opening has no permanent title card",
+    "ending does not feel like a sudden removal"
+  ],
+  "sample_times": [
+    "00:00",
+    "05:00",
+    "10:00",
+    "15:00",
+    "20:00",
+    "25:00",
+    "29:30"
+  ],
+  "frame_times": [
+    "00:05",
+    "05:00",
+    "10:00",
+    "15:00",
+    "20:00",
+    "25:00",
+    "29:30"
+  ],
+  "samples": []
+}

@@ -1,0 +1,8 @@
+[project]
+name = "breathingroom"
+version = "0.1.0"
+description = "Ambient long-form production cycle for Breathing Room TV"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,130 @@
+{
+  "production_status": "ready_for_human_review",
+  "upload_status": "PRIVATE",
+  "audio": {
+    "path": "/workspace/cycles/2026-10-02/audio_master.mp3",
+    "duration_seconds": 1770.096,
+    "peak_db": -2.7,
+    "checks": {
+      "duration_in_range": true,
+      "no_clipping": true,
+      "no_unexpected_silence": true,
+      "no_major_loudness_jumps": true,
+      "ending_is_present": true
+    },
+    "passed": true,
+    "silence": [],
+    "loudness_jumps": [],
+    "vocals": "human_review_required",
+    "musical_continuity": "human_review_required",
+    "sample_times": [
+      "00:00",
+      "05:00",
+      "10:00",
+      "15:00",
+      "20:00",
+      "25:00",
+      "29:30"
+    ]
+  },
+  "video": {
+    "ran": true,
+    "path": "/workspace/cycles/2026-10-02/FINAL_VIDEO.mp4",
+    "duration_seconds": 1770.072,
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "checks": {
+      "duration_in_range": true,
+      "aspect_16_9": true,
+      "audio_present": true,
+      "visual_present": true,
+      "no_black_frames": true
+    },
+    "passed": true,
+    "frames": [
+      {
+        "time": "00:05",
+        "path": "/workspace/cycles/2026-10-02/qa_frames/frame_0005.jpg",
+        "y_avg": 68.8021
+      },
+      {
+        "time": "05:00",
+        "path": "/workspace/cycles/2026-10-02/qa_frames/frame_0500.jpg",
+        "y_avg": 68.333
+      },
+      {
+        "time": "10:00",
+        "path": "/workspace/cycles/2026-10-02/qa_frames/frame_1000.jpg",
+        "y_avg": 67.9774
+      },
+      {
+        "time": "15:00",
+        "path": "/workspace/cycles/2026-10-02/qa_frames/frame_1500.jpg",
+        "y_avg": 68.0587
+      },
+      {
+        "time": "20:00",
+        "path": "/workspace/cycles/2026-10-02/qa_frames/frame_2000.jpg",
+        "y_avg": 68.4259
+      },
+      {
+        "time": "25:00",
+        "path": "/workspace/cycles/2026-10-02/qa_frames/frame_2500.jpg",
+        "y_avg": 68.9112
+      },
+      {
+        "time": "29:30",
+        "path": "/workspace/cycles/2026-10-02/qa_frames/frame_2930.jpg",
+        "y_avg": 69.7072
+      }
+    ],
+    "frame_times": [
+      "00:05",
+      "05:00",
+      "10:00",
+      "15:00",
+      "20:00",
+      "25:00",
+      "29:30"
+    ],
+    "opening_text": "none",
+    "reversed": false
+  },
+  "human_review_required": [
+    "sections sound like the same musical world",
+    "no unexpected vocals",
+    "no harsh frequencies",
+    "no abrupt visual cuts",
+    "no stock watermark",
+    "opening has no permanent title card",
+    "ending does not feel like a sudden removal"
+  ],
+  "sample_times": [
+    "00:00",
+    "05:00",
+    "10:00",
+    "15:00",
+    "20:00",
+    "25:00",
+    "29:30"
+  ],
+  "frame_times": [
+    "00:05",
+    "05:00",
+    "10:00",
+    "15:00",
+    "20:00",
+    "25:00",
+    "29:30"
+  ],
+  "samples": [
+    "/workspace/cycles/2026-10-02/qa_samples/sample_0000.mp3",
+    "/workspace/cycles/2026-10-02/qa_samples/sample_0500.mp3",
+    "/workspace/cycles/2026-10-02/qa_samples/sample_1000.mp3",
+    "/workspace/cycles/2026-10-02/qa_samples/sample_1500.mp3",
+    "/workspace/cycles/2026-10-02/qa_samples/sample_2000.mp3",
+    "/workspace/cycles/2026-10-02/qa_samples/sample_2500.mp3",
+    "/workspace/cycles/2026-10-02/qa_samples/sample_2930.mp3"
+  ]
+}
